@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Up Phone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="phone-shell">
+        <div class="phone-bezel">
+          <div class="status-bar">
+            <div class="time" id="clockTime">9:41</div>
+            <div class="status-icons" aria-label="状态栏信息">
+              <span class="icon signal">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span class="icon wifi"></span>
+              <span class="icon battery">
+                <span class="battery-level"></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="screen-container">
+            <div class="screen lock-screen" id="screen-lock" aria-live="polite">
+              <div class="lock-wallpaper"></div>
+              <div class="lock-overlay"></div>
+              <div class="lock-content">
+                <div class="lock-time" id="lockTime">9:41</div>
+                <div class="lock-date" id="lockDate">周三 10月 26日</div>
+                <button class="unlock-button" type="button" data-action="unlock">
+                  <span class="unlock-text">按住解锁</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="screen home-screen active" id="screen-home">
+              <div class="wallpaper"></div>
+              <div class="scrim"></div>
+
+              <div class="home-header">
+                <div class="search-pill">搜索</div>
+                <button class="mini-button lock-trigger" type="button" data-action="lock" aria-label="锁屏">
+                  <span>🔒</span>
+                </button>
+              </div>
+
+              <div class="app-grid" id="appGrid">
+                <button class="app-icon" type="button" data-app="kakao" style="--icon-color: #f7d978; --icon-accent: #3d2d1c;">
+                  <span class="icon-badge">💬</span>
+                  <span class="app-name">KakaoTalk</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="x" style="--icon-color: #111827; --icon-accent: #f8fafc;">
+                  <span class="icon-badge">𝕏</span>
+                  <span class="app-name">X</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="musinsa" style="--icon-color: #111111; --icon-accent: #f5f5f5;">
+                  <span class="icon-badge" style="font-size: 1.2rem;">M</span>
+                  <span class="app-name">MUSINSA</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="photos" style="--icon-color: #7bd7c2; --icon-accent: #1d2a35;">
+                  <span class="icon-badge">🖼️</span>
+                  <span class="app-name">相册</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="notes" style="--icon-color: #f5c76e; --icon-accent: #4b3f23;">
+                  <span class="icon-badge">📝</span>
+                  <span class="app-name">备忘录</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="calls" style="--icon-color: #8ec5ff; --icon-accent: #15314d;">
+                  <span class="icon-badge">📞</span>
+                  <span class="app-name">通话记录</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="contacts" style="--icon-color: #b8a3ff; --icon-accent: #1b1730;">
+                  <span class="icon-badge">👥</span>
+                  <span class="app-name">联系人</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="files" style="--icon-color: #ffc27a; --icon-accent: #4b2d17;">
+                  <span class="icon-badge">📁</span>
+                  <span class="app-name">文件管理</span>
+                </button>
+
+                <button class="app-icon" type="button" data-app="settings" style="--icon-color: #eceef7; --icon-accent: #2d2d35;">
+                  <span class="icon-badge">⚙️</span>
+                  <span class="app-name">设置</span>
+                </button>
+              </div>
+
+              <div class="dock" aria-label="底部快捷栏">
+                <button class="dock-item active" type="button" data-app="kakao" aria-label="KakaoTalk">
+                  <span>💬</span>
+                </button>
+                <button class="dock-item" type="button" data-app="contacts" aria-label="联系人">
+                  <span>👥</span>
+                </button>
+                <button class="dock-item" type="button" data-app="files" aria-label="文件管理">
+                  <span>📁</span>
+                </button>
+                <button class="dock-item" type="button" data-app="settings" aria-label="设置">
+                  <span>⚙️</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="screen app-screen" id="screen-app">
+              <div class="app-header">
+                <button class="nav-button back-button" type="button" data-action="back" aria-label="返回">
+                  <span>‹</span>
+                </button>
+                <div class="app-title" id="appTitle">应用</div>
+                <button class="nav-button home-button" type="button" data-action="home" aria-label="主页">
+                  <span>⌂</span>
+                </button>
+              </div>
+              <div class="app-body" id="appBody"></div>
+            </div>
+          </div>
+
+          <div class="home-indicator" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
