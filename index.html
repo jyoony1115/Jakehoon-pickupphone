@@ -24,19 +24,22 @@
           </div>
 
           <div class="screen-container">
-            <div class="screen lock-screen" id="screen-lock" aria-live="polite">
+            <div class="screen lock-screen active" id="screen-lock" aria-live="polite">
               <div class="lock-wallpaper"></div>
               <div class="lock-overlay"></div>
               <div class="lock-content">
                 <div class="lock-time" id="lockTime">9:41</div>
                 <div class="lock-date" id="lockDate">周三 10月 26日</div>
-                <button class="unlock-button" type="button" data-action="unlock">
-                  <span class="unlock-text">按住解锁</span>
-                </button>
+                <div class="unlock-slider" aria-label="按住滑动解锁" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="unlock-track">
+                    <div class="unlock-knob"></div>
+                    <span class="unlock-text">按住滑动解锁</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="screen home-screen active" id="screen-home">
+            <div class="screen home-screen" id="screen-home">
               <div class="wallpaper"></div>
               <div class="scrim"></div>
 

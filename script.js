@@ -198,7 +198,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'S',
     time: '2分钟',
     text: '澳大利亚东海岸的晴朗天气持续拉升了周末出游热度，海滩、咖啡厅和城市步道都涌入了不少游客。',
-    image: 'qh9.jpg',
+    image: 'qh21.jpg',
     replies: 186,
     retweets: 72,
     likes: 1430,
@@ -214,7 +214,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'A',
     time: '14分钟',
     text: '当地社区组织正在推动为待领养的宠物筹集粮食和清洁用品，很多志愿者在周末继续参与整理和发放工作。',
-    image: 'qh10.jpg',
+    image: 'qh22.jpg',
     replies: 94,
     retweets: 41,
     likes: 820,
@@ -230,7 +230,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'C',
     time: '38分钟',
     text: '清晨的城市空气和微风让人忍不住慢下来。街角的早餐店排起了队，大家都在享受一段安静而舒服的周末时光。',
-    image: 'qh2.jpg',
+    image: '',
     replies: 68,
     retweets: 23,
     likes: 540,
@@ -246,7 +246,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'M',
     time: '1小时',
     text: '周末去了一家宠物友好咖啡馆，几只小狗一边等咖啡一边认真看着店员，活像一群小明星。',
-    image: 'qh3.jpg',
+    image: '',
     replies: 113,
     retweets: 43,
     likes: 990,
@@ -278,7 +278,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'P',
     time: '3小时',
     text: '本地收养站正在筹备一批寄养所需物资，大家热心捐赠毛巾、零食和清洁用品，希望更多小动物能尽快找到新家。',
-    image: 'qh4.jpg',
+    image: '',
     replies: 72,
     retweets: 58,
     likes: 1460,
@@ -342,7 +342,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'D',
     time: '1小时 20分钟',
     text: '模拟娱乐资讯：韩娱圈继续聚焦艺人公开活动、合作消息和新作品宣传。相关消息多来自公开公开资料和艺人社交平台更新，仍需以官方确认信息为准。 #Dispatch #KpopNews #KoreanEntertainment',
-    image: '',
+    image: 'qh9.jpg',
     replies: 89,
     retweets: 44,
     likes: 2175,
@@ -358,7 +358,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'K',
     time: '2小时',
     text: '模拟娱乐资讯：K-pop团体与演员的公开活动、见面会及宣传安排继续受到关注，粉丝讨论热点集中在新作品宣传节奏与艺人公开动态。 #KoreanEntertainment #KpopNews #Dispatch',
-    image: '',
+    image: 'qh20.jpg',
     replies: 64,
     retweets: 31,
     likes: 1988,
@@ -377,7 +377,7 @@ const DEFAULT_MUSINSA_PRODUCTS = [
     price: 69900,
     colors: ['黑色'],
     sizes: ['S', 'M', 'L'],
-    image: 'black-puffer.jpeg',
+    image: 'qh23.jpg',
     tag: 'HOT',
     description: '轻盈保暖的羽绒服，适合日常通勤和外出穿搭。'
   },
@@ -388,7 +388,7 @@ const DEFAULT_MUSINSA_PRODUCTS = [
     price: 39800,
     colors: ['蓝色牛仔', '黑色'],
     sizes: ['S', 'M', 'L'],
-    image: 'jeans.jpeg',
+    image: 'qh6.jpg',
     tag: 'BEST',
     description: '宽松直筒版型，适合日常穿搭和轻松休闲风。'
   },
@@ -410,7 +410,7 @@ const DEFAULT_MUSINSA_PRODUCTS = [
     price: 52900,
     colors: ['灰色', '米色'],
     sizes: ['S', 'M', 'L'],
-    image: 'grey-outerwear.jpeg',
+    image: 'qh5.jpg',
     tag: 'HOT',
     description: '轻盈基础外套，适合过渡季和日常叠穿。'
   },
@@ -421,7 +421,7 @@ const DEFAULT_MUSINSA_PRODUCTS = [
     price: 19800,
     colors: ['黑色', '白色'],
     sizes: ['ONE'],
-    image: 'black-cap.jpeg',
+    image: 'qh2.jpg',
     tag: 'BASIC',
     description: '简洁百搭的基础款棒球帽，适合日常通勤搭配。'
   },
@@ -432,7 +432,7 @@ const DEFAULT_MUSINSA_PRODUCTS = [
     price: 21900,
     colors: ['粉色', '灰色'],
     sizes: ['ONE'],
-    image: 'pink-cap.jpeg',
+    image: 'qh4.jpg',
     tag: 'NEW',
     description: '鲜明色彩的日系休闲帽，高饱和度搭配更有氛围。'
   },
@@ -454,7 +454,7 @@ const DEFAULT_MUSINSA_PRODUCTS = [
     price: 23800,
     colors: ['牛仔色', '米色'],
     sizes: ['ONE'],
-    image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80',
+    image: 'qh3.jpg',
     tag: 'LIMIT',
     description: '带有字母细节的休闲棒球帽，适合街头感穿搭。'
   },
@@ -534,7 +534,7 @@ const DEFAULT_CALLS = [
 ];
 
 const state = {
-  currentScreen: 'home',
+  currentScreen: 'lock',
   currentApp: 'kakao',
   kakaoView: 'list',
   kakaoChatId: 'Sunghoon',
@@ -709,6 +709,86 @@ function updateClock() {
   clockTime.textContent = formatted;
   lockTime.textContent = formatted;
   document.getElementById('lockDate').textContent = dateString.replace('星期', '周');
+}
+
+function bindUnlockSlider() {
+  const slider = document.querySelector('.unlock-slider');
+  if (!slider) {
+    return;
+  }
+
+  const track = slider.querySelector('.unlock-track');
+  const knob = slider.querySelector('.unlock-knob');
+  const label = slider.querySelector('.unlock-text');
+
+  let active = false;
+  let startX = 0;
+  let maxDistance = 0;
+
+  const resetSlider = () => {
+    active = false;
+    knob.style.transform = 'translateX(0px)';
+    slider.style.setProperty('--unlock-progress', '0');
+    slider.setAttribute('aria-valuenow', '0');
+    label.textContent = '按住滑动解锁';
+    slider.classList.remove('unlocked');
+  };
+
+  const updateSlider = (delta) => {
+    const safeDelta = Math.max(0, Math.min(delta, maxDistance));
+    const percent = maxDistance > 0 ? (safeDelta / maxDistance) * 100 : 0;
+    knob.style.transform = `translateX(${safeDelta}px)`;
+    slider.style.setProperty('--unlock-progress', String(percent / 100));
+    slider.setAttribute('aria-valuenow', String(Math.round(percent)));
+
+    if (percent >= 82) {
+      label.textContent = '已解锁';
+      slider.classList.add('unlocked');
+    } else {
+      label.textContent = '按住滑动解锁';
+      slider.classList.remove('unlocked');
+    }
+  };
+
+  slider.addEventListener('pointerdown', (event) => {
+    if (state.currentScreen !== 'lock') {
+      return;
+    }
+    active = true;
+    startX = event.clientX;
+    maxDistance = track.clientWidth - knob.offsetWidth - 10;
+    slider.setPointerCapture(event.pointerId);
+    event.preventDefault();
+  });
+
+  slider.addEventListener('pointermove', (event) => {
+    if (!active) return;
+    const delta = event.clientX - startX;
+    updateSlider(delta);
+  });
+
+  const finishUnlock = () => {
+    if (!active) return;
+    const currentPercent = Number(slider.getAttribute('aria-valuenow') || 0);
+    active = false;
+
+    if (currentPercent >= 82) {
+      slider.classList.add('unlocked');
+      setScreen('home');
+      setTimeout(() => resetSlider(), 180);
+      return;
+    }
+
+    resetSlider();
+  };
+
+  slider.addEventListener('pointerup', finishUnlock);
+  slider.addEventListener('pointercancel', finishUnlock);
+  slider.addEventListener('pointerleave', () => {
+    if (active) {
+      finishUnlock();
+    }
+  });
 }
 
 function setScreen(screenName) {
@@ -1306,13 +1386,14 @@ function renderXDetail() {
 
 function renderPhotosApp() {
   const albumImages = [
-    'qh2.jpg',
-    'qh3.jpg',
-    'qh4.jpg',
-    'qh5.jpg',
-    'qh6.jpg',
     'qh7.jpg',
-    'qh8.jpg'
+    'qh12.jpg',
+    'qh14.jpg',
+    'qh15.jpg',
+    'qh16.jpg',
+    'qh17.jpg',
+    'qh18.jpg',
+    'qh19.jpg'
   ].map(normalizeAssetPath);
 
   return `
@@ -1730,7 +1811,8 @@ function handleDocumentInput(event) {
 document.addEventListener('DOMContentLoaded', () => {
   updateClock();
   renderApp();
-  setScreen('home');
+  setScreen('lock');
+  bindUnlockSlider();
 
   document.addEventListener('click', handleDocumentClick);
   document.addEventListener('submit', handleDocumentSubmit);
