@@ -246,7 +246,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'M',
     time: '1小时',
     text: '周末去了一家宠物友好咖啡馆，几只小狗一边等咖啡一边认真看着店员，活像一群小明星。',
-    image: '',
+    image: 'qh17.jpg',
     replies: 113,
     retweets: 43,
     likes: 990,
@@ -278,7 +278,7 @@ const DEFAULT_X_POSTS = [
     avatar: 'P',
     time: '3小时',
     text: '本地收养站正在筹备一批寄养所需物资，大家热心捐赠毛巾、零食和清洁用品，希望更多小动物能尽快找到新家。',
-    image: '',
+    image: 'qh7.jpg',
     replies: 72,
     retweets: 58,
     likes: 1460,
@@ -1386,12 +1386,10 @@ function renderXDetail() {
 
 function renderPhotosApp() {
   const albumImages = [
-    'qh7.jpg',
     'qh12.jpg',
     'qh14.jpg',
     'qh15.jpg',
     'qh16.jpg',
-    'qh17.jpg',
     'qh18.jpg',
     'qh19.jpg'
   ].map(normalizeAssetPath);
